@@ -1,9 +1,6 @@
-# smartDiff
+from differ import diff
 
-assume you have 2 text that change frequently, and you need to understand what exactly is changing, you can use my diff function in order to do that.
 
-for example: you have text one:
-```
 text_one = """
 
 Registers:
@@ -26,10 +23,7 @@ Memory:
 Output:
 ------------------------------------------------------------------------------------------------------------------------
 I'll do what you tell me"""
-```
 
-and the following data:
-```
 text_two = """
 
 Registers:
@@ -52,14 +46,5 @@ Memory:
 Output:
 ------------------------------------------------------------------------------------------------------------------------
 I'll do what you tell!"""
-```
-you can use the following function to diff between them:
 
-```
 diff(text_one, text_two, "red", ['reverse', 'bold'])
-```
-
-the output will look like this:
-
-![alt tag](https://raw.githubusercontent.com/romanzaikin/smartDiff/master/image.PNG)
-Have fun!
